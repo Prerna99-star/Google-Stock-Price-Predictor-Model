@@ -1,0 +1,14 @@
+***********************************************************************************************************************************
+                                           WHAT IS DROPOUT REGULARIZATION?
+***********************************************************************************************************************************
+
+REGULARIZATION :->  Process which regularizes or shrinks the coefficient towards zero.
+
+DROPOUT REGULARIZATION :-> Dropout is nothing but dropping some nuerons like randomly set some neurons to zero in the forward pass.
+                           
+ADVANTAGES: -> #It forces the network to have a redundant representation.
+               # It trains a large ensemble of models that share parameters.
+                 Each binary mask is one model, gets trained on only ~ one batch.
+               # At test time -> all neurons are always on
+                              -> we must scale the activation so that for each neuron: 
+                                  OUTPUT AT TEST TIME = EXPECTED OUTPUT AT TRAINING TIME
